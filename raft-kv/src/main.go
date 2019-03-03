@@ -2,19 +2,20 @@ package main
 
 import (
 	"fmt"
+	"github.com/turingkv/raft-kv/src/server"
 	"log"
 	"os"
 	"time"
 
 	"github.com/jessevdk/go-flags"
 	"github.com/turingkv/raft-kv/src/node"
-	"github.com/turingkv/raft-kv/src/server"
 )
 
 // Opts represents command line options
 type Opts struct {
-	BindAddress string `long:"bind" env:"BIND" default:"10.0.2.5:3000" description:"ip:port to bind for a node"`
+	BindAddress string `long:"bind" env:"BIND" default:"127.0.0.1:3000" description:"ip:port to bind for a node"`
 	JoinAddress string `long:"join" env:"JOIN" default:"" description:"ip:port to join for a node"`
+	ApiPort     string `long:"apiport" env:"API_PORT" default:":8080" description:":port for a api port"`
 	Bootstrap   bool   `long:"bootstrap" env:"BOOTSTRAP" description:"bootstrap a cluster"`
 	DataDir     string `long:"datadir" env:"DATA_DIR" default:"/tmp/data/" description:"Where to store system data"`
 }
@@ -40,9 +41,10 @@ func main() {
 		NodeIdentifier: opts.BindAddress,
 		JoinAddress:    opts.JoinAddress,
 		DataDir:        opts.DataDir,
-		//Bootstrap:      opts.Bootstrap,
-		Bootstrap:      true,
+		Bootstrap:      opts.Bootstrap,
+		ApiPort: 		opts.ApiPort,
 	}
+
 	storage, err := node.NewRStorage(&config)
 	if err != nil {
 		log.Panic(err)
@@ -69,7 +71,7 @@ func main() {
 	}
 
 	// Start an HTTP server
-	server.RunHTTPServer(storage)
+	server.RunHTTPServer(storage, config.ApiPort)
 }
 
 func printStatus(s *node.RStorage) {

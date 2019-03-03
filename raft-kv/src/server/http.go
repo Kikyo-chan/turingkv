@@ -86,7 +86,7 @@ func setupRouter(raftNode *node.RStorage) *gin.Engine {
 }
 
 // RunHTTPServer starts HTTP server
-func RunHTTPServer(raftNode *node.RStorage) {
+func RunHTTPServer(raftNode *node.RStorage, apiport string) {
 	router := setupRouter(raftNode)
-	router.Run() // listen and serve on 0.0.0.0:8080
+	router.Run(apiport) //default listen and serve on 0.0.0.0:8080
 }

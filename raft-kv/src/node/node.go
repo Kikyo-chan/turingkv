@@ -21,6 +21,7 @@ type Config struct {
 	NodeIdentifier string
 	JoinAddress    string
 	DataDir        string
+	ApiPort        string
 	Bootstrap      bool
 }
 
