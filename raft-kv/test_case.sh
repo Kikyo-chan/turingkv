@@ -1,4 +1,15 @@
 #!/bin/sh
 
+echo -e "SET KEY (some-key) TEST \n"
 
-#ab -n 500 -c 10 -p post_data.txt -T 'application/json' http://10.0.2.5:8080/keys/aidwew/
+curl 'http://127.0.0.1:8080/keys/some-key/' -H 'Content-Type: application/json' -d '{"value": "hello turingkv"}'
+
+echo -e "\nGET KEY TEST \n"
+
+echo -e "GET VALUE OF some-key \n"
+
+curl 'http://127.0.0.1:8080/keys/some-key/'
+
+echo -e "AB TEST \n"
+
+ab -n 100 -c 100 http://127.0.0.1:8080/keys/some-key/

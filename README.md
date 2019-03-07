@@ -28,3 +28,35 @@ curl 'http://leader地址:leader api端口/keys/some-key/' -H 'Content-Type: app
 curl 'http://leader地址:leader api端口/keys/some-key/'
 ```
 
+**使用docker运行测试**
+
+- 获取镜像
+
+```
+docker push cxspace/turingkv:v1
+```
+
+- 进入项目根目录
+
+```
+cd /root/go/src/github.com/turingkv/raft-kv
+```
+
+- 启动系统
+
+```
+sh run.sh
+```
+
+- 运行测试
+
+```
+sh test_case.sh
+```
+
+- 停止系统
+
+```
+sh stop.sh
+```
+
