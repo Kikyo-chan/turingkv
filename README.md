@@ -33,7 +33,7 @@ curl 'http://leader地址:leader api端口/keys/some-key/'
 - 获取镜像
 
 ```
-docker push cxspace/turingkv:v1
+docker pull cxspace/turingkv:v1
 ```
 
 - 进入项目根目录
