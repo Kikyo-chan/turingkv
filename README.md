@@ -36,6 +36,18 @@ curl 'http://leader地址:leader api端口/keys/some-key/'
 docker pull cxspace/turingkv:v1
 ```
 
+- 启动容器
+
+```
+docker run -it -d b546998a9c04(使用docker images查看镜像ID) /bin/bash
+```
+
+- 进入容器
+
+```
+docker exec -it b546998a9c04(使用docker ps查看容器ID) /bin/bash
+```
+
 - 进入项目根目录
 
 ```
