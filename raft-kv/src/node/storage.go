@@ -78,9 +78,9 @@ func (s *RStorage) Apply(logEntry *raft.Log) interface{} {
 
 	if event.Type == "set" {
 		log.Printf("[DEBUG] set operation received key=%s value=%s", event.Key, event.Value)
-		//s.mutex.Lock()
-		//defer s.mutex.Unlock()
-		//s.storage[event.Key] = event.Value
+		s.mutex.Lock()
+		defer s.mutex.Unlock()
+		s.storage[event.Key] = event.Value
 		s.storage_data.Set([]byte(event.Key), []byte(event.Value))
 		return nil
 	}
@@ -102,6 +102,7 @@ func (s *RStorage) Snapshot() (raft.FSMSnapshot, error) {
 	defer s.mutex.Unlock()
 
 	storageCopy := map[string]string{}
+
 	for k, v := range s.storage {
 		storageCopy[k] = v
 	}
