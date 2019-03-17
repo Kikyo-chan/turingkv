@@ -182,3 +182,21 @@ func (l *LeveldbStore) DeleteRange(min, max uint64) error {
 	}
 	return nil
 }
+
+// scan整个数据库
+func (l *LeveldbStore) ScanAllKV() map[string]string{
+
+	storageIter := map[string]string{}
+	iter := l.db.NewIterator(nil, nil)
+	for iter.Next() {
+		key := string(iter.Key())
+		value := string(iter.Value())
+
+		if key != "" && value != "" {
+			storageIter[key] = value
+		}
+	}
+
+	return storageIter
+}
+

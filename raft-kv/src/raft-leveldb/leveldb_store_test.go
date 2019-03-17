@@ -23,6 +23,23 @@ func TestStoreLog(t *testing.T){
 
 }
 
+func TestScanAllKV(t *testing.T)  {
+
+
+
+	logStore, err := NewLeveldbStore(DB_PATH)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+
+	logStore.Set([]byte("testkey"), []byte("test value"))
+
+	for k, v := range logStore.ScanAllKV() {
+		fmt.Println("key: " + k + " value: " + v)
+	}
+
+}
+
 func TestGetLog(t *testing.T) {
 
 	raftLog := &raft.Log{}
