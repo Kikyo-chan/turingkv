@@ -120,6 +120,24 @@ func TestSetValueViaHTTP(t *testing.T) {
 	assertValue(t, w, testValue)
 }
 
+func TestSetKey(t *testing.T)  {
+
+	jsonStr := []byte(`{"value":"testkey"}`)
+	url := fmt.Sprintf("http://%s/keys/%s/", "127.0.0.1:8080", "some-key")
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	if err != nil {
+		 fmt.Errorf("forward request to leader error %s", err.Error())
+	}
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		 fmt.Errorf("forward request to leader error %s", err.Error())
+	}
+	defer resp.Body.Close()
+
+}
+
 func init() {
 	raftNode = getLeaderNode()
 }

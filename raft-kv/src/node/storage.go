@@ -1,11 +1,16 @@
 package node
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	raft_leveldb "github.com/turingkv/raft-kv/src/raft-leveldb"
 	"io"
+	"io/ioutil"
 	"log"
+	"net/http"
+	"strconv"
+	"strings"
 	"sync"
 	"time"
 
@@ -18,7 +23,7 @@ import (
 type RStorage struct {
 	mutex    sync.Mutex
 	storage  map[string]string
-	storage_data *raft_leveldb.LeveldbStore
+	storageData *raft_leveldb.LeveldbStore
 	RaftNode *raft.Raft
 	config   Config
 }
@@ -26,7 +31,7 @@ type RStorage struct {
 // Get value by key
 func (s *RStorage) Get(key string) string {
 	//return s.storage[key]
-	data, err := s.storage_data.Get([]byte(key))
+	data, err := s.storageData.Get([]byte(key))
 	if err != nil {
 		return err.Error()
 	}
@@ -39,7 +44,33 @@ func (s *RStorage) Get(key string) string {
 // Set value by key
 func (s *RStorage) Set(key string, value string) error {
 	if s.RaftNode.State() != raft.Leader {
-		return fmt.Errorf("Only leader can write to the storage")
+		//转发set请求到leader
+		jsonStr := []byte(`{"value":"`+value+`"}`)
+		leaderHttpIp := strings.Split(fmt.Sprintf("%s", s.RaftNode.Leader()), ":")[0]
+		leaderHttpPort, err_ := strconv.Atoi(strings.Split(fmt.Sprintf("%s", s.RaftNode.Leader()), ":")[1])
+
+		if err_ != nil{
+			return fmt.Errorf("forward request to leader error %s", err_.Error())
+		}
+
+		url := fmt.Sprintf("http://%s:%d/keys/%s/", leaderHttpIp, leaderHttpPort + 5080 , key)
+		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+		if err != nil {
+			return fmt.Errorf("forward request to leader error %s", err.Error())
+		}
+
+		client := &http.Client{}
+		resp, err := client.Do(req)
+		if err != nil {
+			return fmt.Errorf("forward request to leader error %s", err.Error())
+		}
+		defer resp.Body.Close()
+
+		statusCode := resp.StatusCode
+		head := resp.Header
+		body, _ := ioutil.ReadAll(resp.Body)
+
+		return fmt.Errorf("status: %d , head: %s, body: %s", statusCode, head, body)
 	}
 
 	s.mutex.Lock()
@@ -81,7 +112,7 @@ func (s *RStorage) Apply(logEntry *raft.Log) interface{} {
 		//s.mutex.Lock()
 		//defer s.mutex.Unlock()
 		//s.storage[event.Key] = event.Value
-		s.storage_data.Set([]byte(event.Key), []byte(event.Value))
+		s.storageData.Set([]byte(event.Key), []byte(event.Value))
 		return nil
 	}
 
@@ -103,7 +134,7 @@ func (s *RStorage) Snapshot() (raft.FSMSnapshot, error) {
 
 	storageCopy := map[string]string{}
 
-	for k, v := range s.storage_data.ScanAllKV() {
+	for k, v := range s.storageData.ScanAllKV() {
 		storageCopy[k] = v
 	}
 

@@ -91,7 +91,7 @@ func NewRStorage(config *Config) (*RStorage, error) {
 
 	rstorage.RaftNode = raftNode
 
-	rstorage.storage_data, err = db_store.NewLeveldbStore(filepath.Join(config.DataDir, "data"))
+	rstorage.storageData, err = db_store.NewLeveldbStore(filepath.Join(config.DataDir, "data"))
 	if err != nil {
 		return nil, err
 	}

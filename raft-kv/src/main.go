@@ -18,6 +18,7 @@ type Opts struct {
 	ApiPort     string `long:"apiport" env:"API_PORT" default:":8080" description:":port for a api port"`
 	Bootstrap   bool   `long:"bootstrap" env:"BOOTSTRAP" description:"bootstrap a cluster"`
 	DataDir     string `long:"datadir" env:"DATA_DIR" default:"/tmp/data/" description:"Where to store system data"`
+
 }
 
 func main() {

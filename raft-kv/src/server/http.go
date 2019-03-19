@@ -50,6 +50,8 @@ type setKeyData struct {
 	Value string `json:"value"`
 }
 
+
+
 func setKeyView(storage *node.RStorage) func(*gin.Context) {
 	view := func(c *gin.Context) {
 		key := c.Param("key")
@@ -81,6 +83,7 @@ func setupRouter(raftNode *node.RStorage) *gin.Engine {
 	router.POST("/cluster/join/", joinView(raftNode))
 	router.GET("/keys/:key/", getKeyView(raftNode))
 	router.POST("/keys/:key/", setKeyView(raftNode))
+
 
 	return router
 }
