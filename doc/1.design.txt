@@ -1,0 +1,12 @@
+1. raft-kv 添加group id 参数，表示启动的Raft组，如果为-1，则为默认的PD集群
+
+2. 如果group id >= 0 则启动具体的Raft存储Group
+
+3. 具体的某一组 Raft 存储 Group 启动后，定期向PD汇报，自己的IP、端口、组ID、在组中的状态
+
+具体格式为
+
+k                   v
+
+IP$PORT$STATE       GroupId
+

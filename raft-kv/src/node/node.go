@@ -23,13 +23,14 @@ type Config struct {
 	DataDir        string
 	ApiPort        string
 	Bootstrap      bool
+	GroupId		   int
 }
 
 // NewRStorage initiates a new RStorage node
 func NewRStorage(config *Config) (*RStorage, error) {
 	rstorage := RStorage{
 		storage: map[string]string{},
-		config:  *config,
+		Config:  *config,
 	}
 	// 创建数据以及日志持久化存储目录
 	if err := os.MkdirAll(config.DataDir, 0700); err != nil {
@@ -147,7 +148,7 @@ func (s *RStorage) JoinCluster(leaderHTTPAddress string) error {
 		return nil
 	}
 
-	body, err := json.Marshal(map[string]string{"address": s.config.BindAddress})
+	body, err := json.Marshal(map[string]string{"address": s.Config.BindAddress})
 	if err != nil {
 		return err
 	}

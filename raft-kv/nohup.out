@@ -1,16 +1,82 @@
-[INFO] '/tmp/data2' is used to store files of the node
-[INFO] '/tmp/data1' is used to store files of the node
-[INFO] '/tmp/data' is used to store files of the node
+[INFO] '/tmp/group_0_1' is used to store files of the node
+[INFO] '/tmp/group_0_2' is used to store files of the node
 [raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Follower] entering Follower state (Leader: "")
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961445, timeout=400
+Re-submitting `0` credentials after reconnect
+[INFO] Started node=Node at 127.0.0.1:2000 [Follower]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[DEBUG] state=Follower leader=
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :7080
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Follower] entering Follower state (Leader: "")
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961446, timeout=400
+Re-submitting `0` credentials after reconnect
+[INFO] Started node=Node at 127.0.0.1:2001 [Follower]
+[DEBUG] state=Follower leader=
+[INFO] '/tmp/group1_1' is used to store files of the node
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:4000 [Follower] entering Follower state (Leader: "")
+[INFO] '/tmp/group1_2' is used to store files of the node
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961447, timeout=400
+Re-submitting `0` credentials after reconnect
+[INFO] Started node=Node at 127.0.0.1:4000 [Follower]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :9080
+[DEBUG] state=Follower leader=
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:4001 [Follower] entering Follower state (Leader: "")
+[INFO] '/tmp/group0_2' is used to store files of the node
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961448, timeout=400
+Re-submitting `0` credentials after reconnect
+[INFO] Started node=Node at 127.0.0.1:4001 [Follower]
+[DEBUG] state=Follower leader=
 [raft][INFO] raft: Initial configuration (index=0): []
 [raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Follower] entering Follower state (Leader: "")
-[INFO] Started node=Node at 127.0.0.1:3002 [Follower]
+[INFO] '/tmp/group_0_3' is used to store files of the node
+[INFO] '/tmp/group0_3' is used to store files of the node
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961449, timeout=400
+Re-submitting `0` credentials after reconnect
 [INFO] Started node=Node at 127.0.0.1:3001 [Follower]
 [DEBUG] state=Follower leader=
+[INFO] '/tmp/group0_1' is used to store files of the node
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "")
+Connected to 127.0.0.1:2181
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Follower] entering Follower state (Leader: "")
+Authenticated: id=101789099330961450, timeout=400
+Re-submitting `0` credentials after reconnect
+Connected to 127.0.0.1:2181
+[INFO] Started node=Node at 127.0.0.1:3002 [Follower]
 [DEBUG] state=Follower leader=
+Authenticated: id=101789099330961451, timeout=400
+Re-submitting `0` credentials after reconnect
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:3000 [Follower] entering Follower state (Leader: "")
+[INFO] '/tmp/group1_3' is used to store files of the node
+[INFO] Started node=Node at 127.0.0.1:2002 [Follower]
+[DEBUG] state=Follower leader=
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961452, timeout=400
+Re-submitting `0` credentials after reconnect
 [INFO] Started node=Node at 127.0.0.1:3000 [Follower]
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
@@ -21,184 +87,36 @@
 [GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
 [GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
-[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
+[raft][INFO] raft: Initial configuration (index=0): []
+[raft][INFO] raft: Node at 127.0.0.1:4002 [Follower] entering Follower state (Leader: "")
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961453, timeout=400
+Re-submitting `0` credentials after reconnect
+[INFO] Started node=Node at 127.0.0.1:4002 [Follower]
+[DEBUG] state=Follower leader=
+[INFO] trying to add new voter at [127.0.0.1:2001] to the cluster
 [ERROR] cant join to the cluster: node is not the leader
-[GIN] 2019/03/19 - 22:45:00 | 503 [0m|       6.624ms |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         354µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[ERROR] Can't join the cluster: Leader status code is not 200: 503
+[INFO] trying to add new voter at [127.0.0.1:4001] to the cluster
+[ERROR] cant join to the cluster: node is not the leader
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         404µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[ERROR] Can't join the cluster: Leader status code is not 200: 503
 [INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
 [ERROR] cant join to the cluster: node is not the leader
-[GIN] 2019/03/19 - 22:45:00 | 503 [0m|         354µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         368µs |       127.0.0.1 |  POST [0m    /cluster/join/
 [ERROR] Can't join the cluster: Leader status code is not 200: 503
-[ERROR] Can't join the cluster: Leader status code is not 200: 503
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3001 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Leader] entering Leader state
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3000 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Leader] entering Leader state
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3002 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Leader] entering Leader state
-[DEBUG] state=Leader leader=127.0.0.1:3001
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3002
-[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
-[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3001, 127.0.0.1:3001) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001}]
-[raft][INFO] raft: Added peer 127.0.0.1:3001, starting replication
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3002, 127.0.0.1:3002) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001} {Suffrage:Voter ID:127.0.0.1:3002 Address:127.0.0.1:3002}]
-[GIN] 2019/03/19 - 22:45:01 | 200 [0m|       1.729ms |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: Added peer 127.0.0.1:3002, starting replication
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
-[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
-[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8081
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:52993
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:52992
-[raft][WARN] raft: Failed to get previous log: 4 leveldb: not found (last: 2)
-[raft][WARN] raft: Failed to get previous log: 3 leveldb: not found (last: 2)
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
-[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3002 127.0.0.1:3002} rejected, sending older logs (next: 3)
-[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3001 127.0.0.1:3001} rejected, sending older logs (next: 3)
-[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3001 127.0.0.1:3001}
-[GIN] 2019/03/19 - 22:45:01 | 200 [0m|      35.308ms |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3002 127.0.0.1:3002}
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
-[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
-[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8082
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:52994
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:52995
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[ERROR] Reading POST data error: invalid character ',' after object key
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 503
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 503 with 200
-[GIN] 2019/03/19 - 22:45:15 | 200 [0m|         314µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 22:45:15 | 503 [0m|      20.003ms |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[INFO] '/tmp/data2' is used to store files of the node
-[INFO] '/tmp/data' is used to store files of the node
-[INFO] '/tmp/data1' is used to store files of the node
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Follower] entering Follower state (Leader: "")
-[INFO] Started node=Node at 127.0.0.1:3000 [Follower]
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
-[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
-[INFO] Started node=Node at 127.0.0.1:3001 [Follower]
-[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8080
-[DEBUG] state=Follower leader=
-[DEBUG] state=Follower leader=
-[INFO] Started node=Node at 127.0.0.1:3002 [Follower]
-[DEBUG] state=Follower leader=
-[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
 [INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
 [ERROR] cant join to the cluster: node is not the leader
-[ERROR] cant join to the cluster: node is not the leader
-[GIN] 2019/03/19 - 22:46:10 | 503 [0m|         534µs |       127.0.0.1 |  POST [0m    /cluster/join/
-[GIN] 2019/03/19 - 22:46:10 | 503 [0m|         533µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         190µs |       127.0.0.1 |  POST [0m    /cluster/join/
 [ERROR] Can't join the cluster: Leader status code is not 200: 503
+[INFO] trying to add new voter at [127.0.0.1:2002] to the cluster
+[ERROR] cant join to the cluster: node is not the leader
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         146µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[ERROR] Can't join the cluster: Leader status code is not 200: 503
+[INFO] trying to add new voter at [127.0.0.1:4002] to the cluster
+[ERROR] cant join to the cluster: node is not the leader
+[GIN] 2019/03/21 - 22:34:09 | 503 [0m|         176µs |       127.0.0.1 |  POST [0m    /cluster/join/
 [ERROR] Can't join the cluster: Leader status code is not 200: 503
 [raft][WARN] raft: Heartbeat timeout from "" reached, starting election
 [raft][INFO] raft: Node at 127.0.0.1:3002 [Candidate] entering Candidate state in term 2
@@ -207,27 +125,53 @@
 [raft][INFO] raft: Election won. Tally: 1
 [raft][INFO] raft: Node at 127.0.0.1:3002 [Leader] entering Leader state
 [raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:4002 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:4002 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:4002 [Leader] entering Leader state
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2001 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Leader] entering Leader state
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2000 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Leader] entering Leader state
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:4001 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:4001 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:4001 [Leader] entering Leader state
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2002 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Leader] entering Leader state
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
 [raft][INFO] raft: Node at 127.0.0.1:3001 [Candidate] entering Candidate state in term 2
 [raft][DEBUG] raft: Votes needed: 1
 [raft][DEBUG] raft: Vote granted from 127.0.0.1:3001 in term 2. Tally: 1
 [raft][INFO] raft: Election won. Tally: 1
 [raft][INFO] raft: Node at 127.0.0.1:3001 [Leader] entering Leader state
 [raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Candidate] entering Candidate state in term 2
+[raft][INFO] raft: Node at 127.0.0.1:4000 [Candidate] entering Candidate state in term 2
 [raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3000 in term 2. Tally: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:4000 in term 2. Tally: 1
 [raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Leader] entering Leader state
-[DEBUG] state=Leader leader=127.0.0.1:3001
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3002
-[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
-[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3001, 127.0.0.1:3001) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001}]
-[raft][INFO] raft: Added peer 127.0.0.1:3001, starting replication
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3002, 127.0.0.1:3002) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001} {Suffrage:Voter ID:127.0.0.1:3002 Address:127.0.0.1:3002}]
-[GIN] 2019/03/19 - 22:46:11 | 200 [0m|       1.956ms |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: Added peer 127.0.0.1:3002, starting replication
+[raft][INFO] raft: Node at 127.0.0.1:4000 [Leader] entering Leader state
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:2001
+[INFO] trying to add new voter at [127.0.0.1:2001] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:2001, 127.0.0.1:2001) to [{Suffrage:Voter ID:127.0.0.1:2000 Address:127.0.0.1:2000} {Suffrage:Voter ID:127.0.0.1:2001 Address:127.0.0.1:2001}]
+[raft][INFO] raft: Added peer 127.0.0.1:2001, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|         290µs |       127.0.0.1 |  POST [0m    /cluster/join/
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
@@ -235,18 +179,61 @@
 [GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
 [GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
 [GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8081
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:53345
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:53346
+[GIN-debug] Listening and serving HTTP on :7081
+[raft][DEBUG] raft-net: 127.0.0.1:2001 accepted connection from: 127.0.0.1:49447
 [raft][WARN] raft: Failed to get previous log: 3 leveldb: not found (last: 2)
-[raft][WARN] raft: Failed to get previous log: 4 leveldb: not found (last: 2)
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Follower] entering Follower state (Leader: "127.0.0.1:2000")
+[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:2001 127.0.0.1:2001} rejected, sending older logs (next: 3)
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:2001 127.0.0.1:2001}
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4001
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:3000 [Candidate] entering Candidate state in term 2
+[raft][DEBUG] raft: Votes needed: 1
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:3000 in term 2. Tally: 1
+[raft][INFO] raft: Election won. Tally: 1
+[raft][INFO] raft: Node at 127.0.0.1:3000 [Leader] entering Leader state
+[INFO] trying to add new voter at [127.0.0.1:4001] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:4001, 127.0.0.1:4001) to [{Suffrage:Voter ID:127.0.0.1:4000 Address:127.0.0.1:4000} {Suffrage:Voter ID:127.0.0.1:4001 Address:127.0.0.1:4001}]
+[raft][INFO] raft: Added peer 127.0.0.1:4001, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|         313µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :9081
+[raft][DEBUG] raft-net: 127.0.0.1:4001 accepted connection from: 127.0.0.1:49449
+[raft][WARN] raft: Failed to get previous log: 3 leveldb: not found (last: 2)
+[raft][INFO] raft: Node at 127.0.0.1:4001 [Follower] entering Follower state (Leader: "127.0.0.1:4000")
+[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:4001 127.0.0.1:4001} rejected, sending older logs (next: 3)
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:4001 127.0.0.1:4001}
+[DEBUG] state=Leader leader=127.0.0.1:3001
+[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3001, 127.0.0.1:3001) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001}]
+[raft][INFO] raft: Added peer 127.0.0.1:3001, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|       1.076ms |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:49451
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8081
+[raft][WARN] raft: Failed to get previous log: 3 leveldb: not found (last: 2)
 [raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
 [raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3001 127.0.0.1:3001} rejected, sending older logs (next: 3)
-[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3002 127.0.0.1:3002} rejected, sending older logs (next: 3)
 [raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3001 127.0.0.1:3001}
-[GIN] 2019/03/19 - 22:46:11 | 200 [0m|      22.932ms |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3002 127.0.0.1:3002}
+[DEBUG] state=Leader leader=127.0.0.1:3002
+[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3002, 127.0.0.1:3002) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001} {Suffrage:Voter ID:127.0.0.1:3002 Address:127.0.0.1:3002}]
+[raft][INFO] raft: Added peer 127.0.0.1:3002, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|         635µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:49453
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
@@ -255,1956 +242,1752 @@
 [GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
 [GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8082
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:53348
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:53349
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[ERROR] Reading POST data error: invalid character 'h' after object key
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 503
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 503 with 200
-[GIN] 2019/03/19 - 22:46:32 | 200 [0m|         396µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 22:46:32 | 503 [0m|      14.807ms |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 22:47:33 | 200 [0m|         606µs |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 22:49:31 | 200 [0m|       15.43ms |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=testkey
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=testkey
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=testkey
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 22:49:58 | 200 [0m|       4.639ms |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[INFO] '/tmp/data1' is used to store files of the node
-[INFO] '/tmp/data2' is used to store files of the node
-[INFO] '/tmp/data' is used to store files of the node
-listen tcp 127.0.0.1:3001: bind: address already in use
-listen tcp 127.0.0.1:3000: bind: address already in use
-listen tcp 127.0.0.1:3002: bind: address already in use
-panic: listen tcp 127.0.0.1:3000: bind: address already in use
-
-goroutine 1 [panic: runninglisten tcp 127.0.0.1:3001: bind: address already in usepanic: 
-]:
-listen tcp 127.0.0.1:3002: bind: address already in use
-
-goroutine 
-1goroutine  [1running []:
-running]:
-log.Panic(log.Paniclog.Panic0xc420127ef0((, 0xc420115ef00xc420103ef00x1, , , 0x10x10x1, , )
-0x10x1)
-)
-		/usr/local/go/src/log/log.go	:/usr/local/go/src/log/log.go/usr/local/go/src/log/log.go::322322322 + +0xc0 +0xc0
-0xc0
-main.main
-main.mainmain.main((()
-)
-)
-			/Users/didi/Documents/Go/src/github.com/turingkv/raft-kv/src/main.go/Users/didi/Documents/Go/src/github.com/turingkv/raft-kv/src/main.go/Users/didi/Documents/Go/src/github.com/turingkv/raft-kv/src/main.go:::515151 + + +0x2db0x2db0x2db
-
-
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[INFO] '/tmp/data' is used to store files of the node
-[INFO] '/tmp/data1' is used to store files of the node
-[INFO] '/tmp/data2' is used to store files of the node
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Follower] entering Follower state (Leader: "")
-[raft][INFO] raft: Initial configuration (index=0): []
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "")
-[INFO] Started node=Node at 127.0.0.1:3001 [Follower]
-[DEBUG] state=Follower leader=
-[INFO] Started node=Node at 127.0.0.1:3000 [Follower]
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[INFO] Started node=Node at 127.0.0.1:3002 [Follower]
-[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
-[DEBUG] state=Follower leader=
-[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
-[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[DEBUG] state=Follower leader=
-[GIN-debug] Listening and serving HTTP on :8080
-[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
-[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
-[ERROR] cant join to the cluster: node is not the leader
-[ERROR] cant join to the cluster: node is not the leader
-[GIN] 2019/03/19 - 23:03:51 | 503 [0m|         672µs |       127.0.0.1 |  POST [0m    /cluster/join/
-[GIN] 2019/03/19 - 23:03:51 | 503 [0m|         654µs |       127.0.0.1 |  POST [0m    /cluster/join/
-[ERROR] Can't join the cluster: Leader status code is not 200: 503
-[ERROR] Can't join the cluster: Leader status code is not 200: 503
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3002 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3002 [Leader] entering Leader state
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3000 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3000 [Leader] entering Leader state
-[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Candidate] entering Candidate state in term 2
-[raft][DEBUG] raft: Votes needed: 1
-[raft][DEBUG] raft: Vote granted from 127.0.0.1:3001 in term 2. Tally: 1
-[raft][INFO] raft: Election won. Tally: 1
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Leader] entering Leader state
-[DEBUG] state=Leader leader=127.0.0.1:3001
-[DEBUG] state=Leader leader=127.0.0.1:3002
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[INFO] trying to add new voter at [127.0.0.1:3001] to the cluster
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3001, 127.0.0.1:3001) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001}]
-[INFO] trying to add new voter at [127.0.0.1:3002] to the cluster
-[raft][INFO] raft: Added peer 127.0.0.1:3001, starting replication
-[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:3002, 127.0.0.1:3002) to [{Suffrage:Voter ID:127.0.0.1:3000 Address:127.0.0.1:3000} {Suffrage:Voter ID:127.0.0.1:3001 Address:127.0.0.1:3001} {Suffrage:Voter ID:127.0.0.1:3002 Address:127.0.0.1:3002}]
-[GIN] 2019/03/19 - 23:03:52 | 200 [0m|         415µs |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: Added peer 127.0.0.1:3002, starting replication
-[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
-
-[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
-[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
-[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8081
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:51194
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:51195
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [raft][WARN] raft: Failed to get previous log: 4 leveldb: not found (last: 2)
-[raft][WARN] raft: Failed to get previous log: 3 leveldb: not found (last: 2)
 [raft][INFO] raft: Node at 127.0.0.1:3002 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
-[raft][INFO] raft: Node at 127.0.0.1:3001 [Follower] entering Follower state (Leader: "127.0.0.1:3000")
 [raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3002 127.0.0.1:3002} rejected, sending older logs (next: 3)
-[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:3001 127.0.0.1:3001} rejected, sending older logs (next: 3)
 [raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3002 127.0.0.1:3002}
-[GIN] 2019/03/19 - 23:03:52 | 200 [0m|       1.782ms |       127.0.0.1 |  POST [0m    /cluster/join/
-[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:3001 127.0.0.1:3001}
+[INFO] trying to add new voter at [127.0.0.1:2002] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:2002, 127.0.0.1:2002) to [{Suffrage:Voter ID:127.0.0.1:2000 Address:127.0.0.1:2000} {Suffrage:Voter ID:127.0.0.1:2001 Address:127.0.0.1:2001} {Suffrage:Voter ID:127.0.0.1:2002 Address:127.0.0.1:2002}]
+[raft][INFO] raft: Added peer 127.0.0.1:2002, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|         594µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[raft][DEBUG] raft-net: 127.0.0.1:2002 accepted connection from: 127.0.0.1:49455
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :7082
+[raft][WARN] raft: Failed to get previous log: 4 leveldb: not found (last: 2)
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Follower] entering Follower state (Leader: "127.0.0.1:2000")
+[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:2002 127.0.0.1:2002} rejected, sending older logs (next: 3)
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:2002 127.0.0.1:2002}
+[DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4002
+[INFO] trying to add new voter at [127.0.0.1:4002] to the cluster
+[raft][INFO] raft: Updating configuration with AddStaging (127.0.0.1:4002, 127.0.0.1:4002) to [{Suffrage:Voter ID:127.0.0.1:4000 Address:127.0.0.1:4000} {Suffrage:Voter ID:127.0.0.1:4001 Address:127.0.0.1:4001} {Suffrage:Voter ID:127.0.0.1:4002 Address:127.0.0.1:4002}]
+[raft][INFO] raft: Added peer 127.0.0.1:4002, starting replication
+[GIN] 2019/03/21 - 22:34:10 | 200 [0m|         762µs |       127.0.0.1 |  POST [0m    /cluster/join/
+[raft][DEBUG] raft-net: 127.0.0.1:4002 accepted connection from: 127.0.0.1:49457
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
 [GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
 [GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[raft][WARN] raft: Failed to get previous log: 4 leveldb: not found (last: 2)
 [GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
-[GIN-debug] Listening and serving HTTP on :8082
-[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:51196
-[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:51197
+[GIN-debug] Listening and serving HTTP on :9082
+[raft][INFO] raft: Node at 127.0.0.1:4002 [Follower] entering Follower state (Leader: "127.0.0.1:4000")
+[raft][WARN] raft: AppendEntries to {Voter 127.0.0.1:4002 127.0.0.1:4002} rejected, sending older logs (next: 3)
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:4002 127.0.0.1:4002}
+[raft][DEBUG] raft-net: 127.0.0.1:2001 accepted connection from: 127.0.0.1:49458
+[raft][DEBUG] raft-net: 127.0.0.1:2002 accepted connection from: 127.0.0.1:49459
+[raft][DEBUG] raft-net: 127.0.0.1:4001 accepted connection from: 127.0.0.1:49460
+[raft][DEBUG] raft-net: 127.0.0.1:4002 accepted connection from: 127.0.0.1:49461
+[raft][DEBUG] raft-net: 127.0.0.1:3002 accepted connection from: 127.0.0.1:49463
+[raft][DEBUG] raft-net: 127.0.0.1:3001 accepted connection from: 127.0.0.1:49462
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:04:24 | 200 [0m|         187µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 23:04:24 | 503 [0m|       2.534ms |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv1
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv1
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv1
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:05:43 | 200 [0m|       2.216ms |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:05:45 | 200 [0m|          47µs |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:05:49 | 200 [0m|          70µs |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:05:57 | 200 [0m|         152µs |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:06:03 | 200 [0m|         111µs |       127.0.0.1 |  GET [0m    /keys/some-key/
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:06:35 | 200 [0m|         120µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 23:06:35 | 503 [0m|         987µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][WARN] raft: Heartbeat timeout from "127.0.0.1:2000" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Candidate] entering Candidate state in term 3
+[raft][DEBUG] raft: Votes needed: 2
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2002 in term 3. Tally: 1
+[raft][DEBUG] raft-net: 127.0.0.1:2001 accepted connection from: 127.0.0.1:49693
+[raft][ERR] raft: Failed to make RequestVote RPC to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][WARN] raft: Rejecting vote request from 127.0.0.1:2002 since we have a leader: 127.0.0.1:2000
+[raft][WARN] raft: Heartbeat timeout from "127.0.0.1:2000" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Candidate] entering Candidate state in term 3
+[raft][DEBUG] raft: Votes needed: 2
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2001 in term 3. Tally: 1
+[raft][ERR] raft: Failed to make RequestVote RPC to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft-net: 127.0.0.1:2002 accepted connection from: 127.0.0.1:49696
+[raft][INFO] raft: Duplicate RequestVote for same term: 3
+[DEBUG] state=Candidate leader=
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Candidate leader=
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][WARN] raft: Election timeout reached, restarting election
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Candidate] entering Candidate state in term 4
+[raft][DEBUG] raft: Votes needed: 2
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2002 in term 4. Tally: 1
+[raft][ERR] raft: Failed to make RequestVote RPC to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][INFO] raft: Node at 127.0.0.1:2001 [Follower] entering Follower state (Leader: "")
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2001 in term 4. Tally: 2
+[raft][INFO] raft: Election won. Tally: 2
+[raft][INFO] raft: Node at 127.0.0.1:2002 [Leader] entering Leader state
+[raft][INFO] raft: Added peer 127.0.0.1:2000, starting replication
+[raft][INFO] raft: Added peer 127.0.0.1:2001, starting replication
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:2001 127.0.0.1:2001}
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft-net: 127.0.0.1:2001 accepted connection from: 127.0.0.1:49704
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][WARN] raft: Failed to contact 127.0.0.1:2000 in 500.522ms
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][WARN] raft: Failed to contact 127.0.0.1:2000 in 979.811ms
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][WARN] raft: Failed to contact 127.0.0.1:2000 in 1.429117s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1.920551s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 2.400309s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 2.85461s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 3.342327s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 3.825871s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 4.263622s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 4.733571s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 5.166942s
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 5.662042s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 6.14547s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 6.631452s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 7.109419s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 7.550147s
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 7.990014s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 8.43171s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 8.932288s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 9.370042s
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 9.854688s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 10.31929s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 10.791533s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 11.220653s
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 11.649453s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 12.149763s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 12.615749s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 13.062324s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 13.551261s
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 14.017471s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 14.510051s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 14.95976s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 15.424766s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 15.926146s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 16.352781s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 16.82599s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 17.262364s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 17.673712s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 18.16273s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 18.593365s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 19.082624s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 19.5786s
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 20.062471s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 20.501713s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 20.972806s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 21.447503s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 21.917788s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 22.401448s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 22.89088s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 23.379867s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 23.830737s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 24.320376s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 24.790684s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 25.28076s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 25.782623s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 26.252341s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 26.687353s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 27.163051s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 27.652147s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 28.140368s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 28.621693s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 29.116117s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 29.52061s
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 30.005881s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 30.454769s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 30.911s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 31.401117s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 31.885762s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 32.350783s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 32.820002s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 33.274404s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 33.773503s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 34.233573s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 34.667419s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 35.126539s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 35.581021s
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 36.064776s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 36.52381s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 37.018602s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 37.47706s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 37.977489s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 38.44423s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 38.876955s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 39.314987s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 39.80805s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 40.294414s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 40.759968s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 41.233363s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 41.687171s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 42.188229s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 42.667926s
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 43.152819s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 43.6268s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 44.046393s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 44.486163s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 44.927234s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 45.368975s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 45.787485s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 46.300586s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 46.760554s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 47.253683s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 47.691235s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 48.121813s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 48.585148s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 49.037298s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 49.534244s
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 50.029269s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 50.440855s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 50.88565s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 51.376152s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 51.795683s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 52.241696s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 52.684416s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 53.132083s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 53.635236s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 54.056289s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 54.492901s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 54.990501s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 55.415325s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 55.903061s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 56.391099s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 56.813611s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 57.292919s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 57.784783s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 58.285006s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 58.75401s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 59.233388s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 59.698745s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m0.140184s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m0.621679s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m1.122223s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m1.568918s
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m1.998578s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m2.470055s
+[raft][ERR] raft: Failed to AppendEntries to {Voter 127.0.0.1:2000 127.0.0.1:2000}: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m2.95182s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m3.425685s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Leader leader=127.0.0.1:3000
-[DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][ERR] raft: Failed to heartbeat to 127.0.0.1:2000: dial tcp 127.0.0.1:2000: getsockopt: connection refused
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m3.915475s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m4.406601s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m4.891098s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m5.363813s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m5.825473s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m6.317871s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m6.782074s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m7.281621s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m7.747539s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m8.230427s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m8.653998s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m9.108454s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m9.568252s
 [DEBUG] state=Leader leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m10.050934s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m10.517475s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m10.951101s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m11.424245s
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[INFO] '/tmp/group_0_1' is used to store files of the node
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[raft][INFO] raft: Initial configuration (index=4): [{Suffrage:Voter ID:127.0.0.1:2000 Address:127.0.0.1:2000} {Suffrage:Voter ID:127.0.0.1:2001 Address:127.0.0.1:2001} {Suffrage:Voter ID:127.0.0.1:2002 Address:127.0.0.1:2002}]
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Follower] entering Follower state (Leader: "")
+Connected to 127.0.0.1:2181
+Authenticated: id=101789099330961455, timeout=400
+Re-submitting `0` credentials after reconnect
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[INFO] Started node=Node at 127.0.0.1:2000 [Follower]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[DEBUG] state=Follower leader=
+[GIN-debug] POST   /cluster/join/            --> github.com/turingkv/raft-kv/src/server.joinView.func1 (3 handlers)
+[GIN-debug] GET    /keys/:key/               --> github.com/turingkv/raft-kv/src/server.getKeyView.func1 (3 handlers)
+[GIN-debug] POST   /keys/:key/               --> github.com/turingkv/raft-kv/src/server.setKeyView.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :7080
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m11.867181s
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m12.364912s
+[raft][WARN] raft: Heartbeat timeout from "" reached, starting election
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Candidate] entering Candidate state in term 3
+[raft][DEBUG] raft: Votes needed: 2
+[raft][DEBUG] raft: Vote granted from 127.0.0.1:2000 in term 3. Tally: 1
+[raft][DEBUG] raft-net: 127.0.0.1:2002 accepted connection from: 127.0.0.1:49887
+[raft][DEBUG] raft-net: 127.0.0.1:2001 accepted connection from: 127.0.0.1:49888
+[raft][WARN] raft: Rejecting vote request from 127.0.0.1:2000 since we have a leader: 127.0.0.1:2002
+[raft][WARN] raft: Rejecting vote request from 127.0.0.1:2000 since we have a leader: 127.0.0.1:2002
+[raft][DEBUG] raft: Newer term discovered, fallback to follower
+[raft][INFO] raft: Node at 127.0.0.1:2000 [Follower] entering Follower state (Leader: "")
+[raft][DEBUG] raft: Failed to contact 127.0.0.1:2000 in 1m12.837392s
+[raft][DEBUG] raft-net: 127.0.0.1:2000 accepted connection from: 127.0.0.1:49891
+[raft][INFO] raft: pipelining replication to peer {Voter 127.0.0.1:2000 127.0.0.1:2000}
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[raft][DEBUG] raft-net: 127.0.0.1:2000 accepted connection from: 127.0.0.1:49895
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:17:07 | 200 [0m|         135µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 23:17:07 | 503 [0m|       1.265ms |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkv2
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:17:11 | 200 [0m|          56µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[GIN] 2019/03/19 - 23:17:11 | 503 [0m|         767µs |       127.0.0.1 |  POST [0m    /keys/some-key/
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkvok
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkvok
-[DEBUG] Applying a new log entry to the store
-[DEBUG] set operation received key=some-key value=hello turingkvok
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:17:18 | 200 [0m|          52µs |       127.0.0.1 |  GET [0m    /keys/some-key/
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:17:21 | 200 [0m|         172µs |       127.0.0.1 |  GET [0m    /keys/some-key/
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
-[GIN] 2019/03/19 - 23:17:25 | 200 [0m|         360µs |       127.0.0.1 |  GET [0m    /keys/some-key/
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000
+[DEBUG] state=Leader leader=127.0.0.1:4000
 [DEBUG] state=Leader leader=127.0.0.1:3000
+[DEBUG] state=Leader leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:2002
+[DEBUG] state=Follower leader=127.0.0.1:4000
 [DEBUG] state=Follower leader=127.0.0.1:3000
 [DEBUG] state=Follower leader=127.0.0.1:3000
+[DEBUG] state=Follower leader=127.0.0.1:4000

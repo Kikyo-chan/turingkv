@@ -25,7 +25,7 @@ type RStorage struct {
 	storage  map[string]string
 	storageData *raft_leveldb.LeveldbStore
 	RaftNode *raft.Raft
-	config   Config
+	Config   Config
 }
 
 // Get value by key

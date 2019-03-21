@@ -2,7 +2,7 @@
 
 echo -e "SET KEY (some-key) TEST \n"
 
-curl 'http://127.0.0.1:8081/keys/some-key/' -H 'Content-Type: application/json' -d '{"value": "hello turingkv1"}'
+curl 'http://127.0.0.1:8000/keys/turing-key-dcdwcbkwqcbhekwqbckejwqhchb/' -H 'Content-Type: application/json' -d '{"value": "hello turingkv1"}'
 
 echo -e "\nGET KEY TEST \n"
 
