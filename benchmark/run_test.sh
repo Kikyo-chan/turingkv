@@ -10,7 +10,7 @@ function randStr()
 }
 
 
-for i in {1..9}
+for i in {1..99}
 do
 str=$(randStr)
 echo "RUN SET TEST"
