@@ -2,19 +2,18 @@ package main
 
 import (
 	"fmt"
+	log "github.com/Sirupsen/logrus"
+	"github.com/jessevdk/go-flags"
+	"github.com/lestrrat/go-file-rotatelogs"
+	"github.com/turingkv/raft-kv/src/node"
 	"github.com/turingkv/raft-kv/src/server"
-	"github.com/turingkv/raft-kv/src/zk-utils"
-	"log"
+	"github.com/turingkv/raft-kv/src/utils"
 	"os"
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/jessevdk/go-flags"
-	"github.com/turingkv/raft-kv/src/node"
 )
 
-// Opts represents command line options
 type Opts struct {
 	BindAddress string `long:"bind" env:"BIND" default:"127.0.0.1:3000" description:"ip:port to bind for a node"`
 	JoinAddress string `long:"join" env:"JOIN" default:"" description:"ip:port to join for a node"`
@@ -22,23 +21,30 @@ type Opts struct {
 	Bootstrap   bool   `long:"bootstrap" env:"BOOTSTRAP" description:"bootstrap a cluster"`
 	DataDir     string `long:"data_dir" env:"DATA_DIR" default:"/tmp/data/" description:"Where to store system data"`
 	GroupId     int    `long:"group_id" env:"GROUP_ID" default:"0" description:"Raft Group Id"`
+	ZkAddress   string `long:"zk_address" env:"ZK_ADDRESS" default:"127.0.0.1:2181" description:"zkServerAddress"`
+	LogPath     string `long:"log_path" env:"LOG_PATH" default:"logs/turing-kv.log" description:"logPath"`
 }
 
 func main() {
-	// We must read application options from command line
-	// then initialize a raft node with this options.
-	//
-	// Also, the leader node must start a web interface
-	// so other nodes will be able to join the cluster.
-	// Basically, they send a POST request to the leader with their IP address,
-	// and it adds them to the cluster
+	//参数解析
 	var opts Opts
 	p := flags.NewParser(&opts, flags.Default)
 	if _, err := p.ParseArgs(os.Args[1:]); err != nil {
 		log.Panicln(err)
 	}
 
-	log.Printf("[INFO] '%s' is used to store files of the node", opts.DataDir)
+	//日志配置
+	if logf, err := rotatelogs.New(
+		opts.LogPath+".%Y%m%d",
+		rotatelogs.WithMaxAge(time.Hour*24*30),
+		rotatelogs.WithRotationTime(time.Hour*24),
+	); err != nil {
+		log.WithError(err).Error("create rotatelogs, use default io.writer instead")
+	} else {
+		log.SetOutput(logf)
+	}
+
+	log.Infof("'%s' is used to store files of the node", opts.DataDir)
 
 	config := node.Config{
 		BindAddress:    opts.BindAddress,
@@ -46,8 +52,8 @@ func main() {
 		JoinAddress:    opts.JoinAddress,
 		DataDir:        opts.DataDir,
 		Bootstrap:      opts.Bootstrap,
-		ApiPort: 		opts.ApiPort,
-		GroupId:		opts.GroupId,
+		ApiPort:        opts.ApiPort,
+		GroupId:        opts.GroupId,
 	}
 
 	storage, err := node.NewRStorage(&config)
@@ -56,8 +62,9 @@ func main() {
 	}
 
 	// 服务注册到zk
-	zkServers := []string{"127.0.0.1:2181"}
-	client, err := zk_utils.NewClient(zkServers, "/api", 10)
+	zkServers := strings.Split(opts.ZkAddress, ",")
+
+	client, err := utils.NewClient(zkServers, "/api", 10)
 	if err != nil {
 		log.Panic(err)
 	}
@@ -69,26 +76,23 @@ func main() {
 		log.Panic(err)
 	}
 
-	node_ := &zk_utils.ServiceNode{"group_" + strconv.Itoa(opts.GroupId), strings.Split(opts.BindAddress,":")[0], port}
+	node_ := &utils.ServiceNode{"group_" + strconv.Itoa(opts.GroupId), strings.Split(opts.BindAddress, ":")[0], port}
 	//向zk注册服务信息
 	if err := client.Register(node_); err != nil {
-		log.Panic(err)
+		log.Error(err)
 	}
 
 	msg := fmt.Sprintf("[INFO] Started node=%s", storage.RaftNode)
-	log.Println(msg)
+	log.Info(msg)
 
 	go printStatus(storage)
 
-	// If JoinAddress is not nil and there is no cluster, we have to send a POST request to this address
-	// It must be an address of the cluster leader
-	// We send POST request every second until it succeed
 	if config.JoinAddress != "" {
 		for 1 == 1 {
 			time.Sleep(time.Second * 1)
 			err := storage.JoinCluster(config.JoinAddress)
 			if err != nil {
-				log.Printf("[ERROR] Can't join the cluster: %+v", err)
+				log.Info("Can't join the cluster: %+v", err)
 			} else {
 				break
 			}
@@ -101,14 +105,7 @@ func main() {
 
 func printStatus(s *node.RStorage) {
 	for {
-		log.Printf("[DEBUG] state=%s leader=%s", s.RaftNode.State(), s.RaftNode.Leader())
+		log.Infof("state=%s leader=%s", s.RaftNode.State(), s.RaftNode.Leader())
 		time.Sleep(time.Second * 2)
-	}
-}
-
-func reportToPD(s *node.RStorage)  {
-	for {
-
-		time.Sleep(time.Second * 1)
 	}
 }

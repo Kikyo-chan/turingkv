@@ -7,12 +7,12 @@ import (
 	raft_leveldb "github.com/turingkv/raft-kv/src/raft-leveldb"
 	"io"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"strconv"
 	"strings"
 	"sync"
 	"time"
+	log "github.com/Sirupsen/logrus"
 
 	"github.com/hashicorp/raft"
 )
@@ -30,7 +30,6 @@ type RStorage struct {
 
 // Get value by key
 func (s *RStorage) Get(key string) string {
-	//return s.storage[key]
 	data, err := s.storageData.Get([]byte(key))
 	if err != nil {
 		return err.Error()

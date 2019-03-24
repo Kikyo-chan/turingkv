@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"net/http/httptest"
@@ -137,6 +138,19 @@ func TestSetKey(t *testing.T)  {
 	defer resp.Body.Close()
 
 }
+
+func TestGetKeyValue(t *testing.T) {
+
+	resp, err := http.Get(fmt.Sprintf("http://%s/keys/%s/", "127.0.0.1:8080", "some-key"))
+	if err != nil {
+		fmt.Errorf("forward request to leader error %s", err.Error())
+	}
+	defer resp.Body.Close()
+	s,err:=ioutil.ReadAll(resp.Body)
+	fmt.Printf(string(s))
+
+}
+
 
 func init() {
 	raftNode = getLeaderNode()

@@ -7,7 +7,6 @@ type Config struct {
 
 type ConfigServer struct {
 
-
 	//版本
 	version string
 
