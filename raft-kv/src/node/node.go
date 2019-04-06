@@ -10,7 +10,6 @@ import (
 	"os"
 	"path/filepath"
 	"time"
-
 	"github.com/hashicorp/raft"
 	db_store "github.com/turingkv/raft-kv/src/raft-leveldb"
 )
@@ -22,7 +21,8 @@ type Config struct {
 	JoinAddress    string
 	DataDir        string
 	ApiPort        string
-	Bootstrap      bool
+	RpcPort        string
+    Bootstrap      bool
 	GroupId		   int
 }
 
@@ -52,15 +52,11 @@ func NewRStorage(config *Config) (*RStorage, error) {
 		return nil, err
 	}
 
-
-	//logStore, err := rbolt.NewBoltStore(filepath.Join(config.DataDir, "raft-log.bolt"))
-
 	logStore, err := db_store.NewLeveldbStore(filepath.Join(config.DataDir, "raft-log"))
 	if err != nil {
 		return nil, err
 	}
 
-	//stableStore, err := rbolt.NewBoltStore(filepath.Join(config.DataDir, "raft-stable.bolt"))
 	stableStore, err := db_store.NewLeveldbStore(filepath.Join(config.DataDir, "raft-stable"))
 	if err != nil {
 		return nil, err

@@ -50,8 +50,6 @@ type setKeyData struct {
 	Value string `json:"value"`
 }
 
-
-
 func setKeyView(storage *node.RStorage) func(*gin.Context) {
 	view := func(c *gin.Context) {
 		key := c.Param("key")

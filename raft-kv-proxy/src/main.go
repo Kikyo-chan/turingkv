@@ -8,7 +8,10 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/turingkv/raft-kv-proxy/src/hash"
 	"github.com/turingkv/raft-kv/src/utils"
-	"math/rand"
+	"golang.org/x/net/context"
+    "google.golang.org/grpc"
+    pb "github.com/turingkv/kvrpc"
+    "math/rand"
 	"os"
 	"strconv"
 	"strings"
@@ -42,9 +45,21 @@ func getKeyView(opts Opts, client *utils.SdClient) func(*gin.Context) {
 		//从对应raft组中的服务器中读出数据
 		serverNodes, err := client.GetNodes("group_" + strconv.Itoa(int(groupId)))
 		randServerID := rand.Intn(len(serverNodes))
-		result := utils.GetValueByKeyFromNode(serverNodes[randServerID].Host, serverNodes[randServerID].Port, key)
-		log.Infof("get k %s v %s from  server %s port %d", key, result, serverNodes[randServerID].Host, serverNodes[randServerID].Port)
+	    
+        conn, err := grpc.Dial(fmt.Sprintf("%s:%d", serverNodes[randServerID].Host, serverNodes[randServerID].Port), grpc.WithInsecure())
+        if err != nil {
+            log.Errorf("did connect: %v", err)
+        }
+        defer conn.Close()
 
+        c_rpc := pb.NewApiClient(conn)
+        r, err := c_rpc.GetV(context.Background(), &pb.VRequest{Key: key})
+        if err != nil {
+            log.Errorf("post v error: %v", err)
+        }
+        
+        result := r.Value
+        log.Infof("get k %s v %s from  server %s port %d", key, result, serverNodes[randServerID].Host, serverNodes[randServerID].Port)
 		if err == nil {
 			c.JSON(200, gin.H{
 				"value": result,
@@ -66,32 +81,36 @@ func setKeyView(opts Opts, client *utils.SdClient) func(*gin.Context) {
 		base := uint32(MOD / opts.GroupCount)
 		groupId := slot / base
 
-		//拿到PD地址
-		nodes, err := client.GetNodes("group_-1")
-		if err != nil {
-			panic(err)
-		}
-		randServerID := rand.Intn(len(nodes))
-
-		//存储key和group的映射到PD
-		utils.PostKVToAnNode(nodes[randServerID].Host, nodes[randServerID].Port, key, strconv.Itoa(int(groupId)))
-		log.Infof("post k %s v %s to pd server %s port %d", key, strconv.Itoa(int(groupId)), nodes[randServerID].Host, nodes[randServerID].Port)
-
-		/*
+        /*
 			存储数据到具体group
 		*/
 
 		// 拿到对应group的server列表
 		serverNodes, err := client.GetNodes("group_" + strconv.Itoa(int(groupId)))
-		randServerID = rand.Intn(len(serverNodes))
+		randServerID := rand.Intn(len(serverNodes))
 
-		var data setKeyData
+        conn, err := grpc.Dial(fmt.Sprintf("%s:%d", serverNodes[randServerID].Host, serverNodes[randServerID].Port), grpc.WithInsecure())
+        if err != nil {
+            log.Errorf("did connect: %v", err)
+        }
+
+        defer conn.Close()
+        c_rpc := pb.NewApiClient(conn)
+        
+        var data setKeyData
 		err = c.BindJSON(&data)
 		if err != nil {
 			panic(err)
 		}
-		utils.PostKVToAnNode(serverNodes[randServerID].Host, serverNodes[randServerID].Port, key, data.Value)
-		log.Infof("post k %s v %s to  server %s port %d", key, data.Value, serverNodes[randServerID].Host, serverNodes[randServerID].Port)
+        
+        r_ , err := c_rpc.PostKV(context.Background(), &pb.KVRequest{Key:key, Value: data.Value})
+        if err != nil {
+            log.Errorf("post kv error: %v", err)
+        }
+          
+        if r_ != nil {
+		    log.Infof("post k %s v %s to  server %s port %d is %v", key, data.Value, serverNodes[randServerID].Host, serverNodes[randServerID].Port, r_.Isok)
+        }
 
 		if err == nil {
 			c.JSON(200, gin.H{

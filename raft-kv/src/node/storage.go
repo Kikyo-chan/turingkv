@@ -1,19 +1,18 @@
 package node
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	raft_leveldb "github.com/turingkv/raft-kv/src/raft-leveldb"
 	"io"
-	"io/ioutil"
-	"net/http"
 	"strconv"
 	"strings"
 	"sync"
 	"time"
 	log "github.com/Sirupsen/logrus"
-
+    "golang.org/x/net/context"
+    "google.golang.org/grpc"
+    pb "github.com/turingkv/kvrpc"
 	"github.com/hashicorp/raft"
 )
 
@@ -44,32 +43,30 @@ func (s *RStorage) Get(key string) string {
 func (s *RStorage) Set(key string, value string) error {
 	if s.RaftNode.State() != raft.Leader {
 		//转发set请求到leader
-		jsonStr := []byte(`{"value":"`+value+`"}`)
 		leaderHttpIp := strings.Split(fmt.Sprintf("%s", s.RaftNode.Leader()), ":")[0]
 		leaderHttpPort, err_ := strconv.Atoi(strings.Split(fmt.Sprintf("%s", s.RaftNode.Leader()), ":")[1])
 
 		if err_ != nil{
 			return fmt.Errorf("forward request to leader error %s", err_.Error())
 		}
+        
+        conn, err := grpc.Dial(fmt.Sprintf("%s:%d", leaderHttpIp, leaderHttpPort + 5000), grpc.WithInsecure())
+        if err != nil {
+            log.Errorf("did connect: %v", err)
+        }
+        defer conn.Close()
+        c_rpc := pb.NewApiClient(conn)
 
-		url := fmt.Sprintf("http://%s:%d/keys/%s/", leaderHttpIp, leaderHttpPort + 5080 , key)
-		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
-		if err != nil {
-			return fmt.Errorf("forward request to leader error %s", err.Error())
-		}
+        r_ , err := c_rpc.PostKV(context.Background(), &pb.KVRequest{Key:key, Value: value})
+        if err != nil {
+            log.Errorf("post kv error: %v", err)
+        }
 
-		client := &http.Client{}
-		resp, err := client.Do(req)
-		if err != nil {
-			return fmt.Errorf("forward request to leader error %s", err.Error())
-		}
-		defer resp.Body.Close()
+        if r_ != nil {
+            log.Infof("post k %s v %s to  server %s port %d is %v", key, value, leaderHttpIp, leaderHttpPort + 5000, r_.Isok)
+        }
 
-		statusCode := resp.StatusCode
-		head := resp.Header
-		body, _ := ioutil.ReadAll(resp.Body)
-
-		return fmt.Errorf("status: %d , head: %s, body: %s", statusCode, head, body)
+		return nil
 	}
 
 	s.mutex.Lock()

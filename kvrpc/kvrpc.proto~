@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package kvrpc;
+
+service Api {
+    rpc PostKV (KVRequest) returns (Status) {}
+    rpc GetV (VRequest) returns (ValueReply) {}
+}
+
+message KVRequest {
+    string key = 1;
+    string value = 2;
+}
+
+message VRequest {
+    string key = 1;
+}
+
+message Status {
+    string isok = 1;
+}
+
+message ValueReply {
+    string value = 1;
+}

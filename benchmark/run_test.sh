@@ -10,7 +10,7 @@ function randStr()
 }
 
 
-for i in {1..99}
+for i in {1..9}
 do
 str=$(randStr)
 echo "RUN SET TEST"
@@ -20,6 +20,3 @@ echo "RUN GET TEST"
 ab -n 100 -c 10 "http://127.0.0.1:9988/keys/"$str"/"
 echo "RUN GET TEST OVER"
 done
-
-
-
