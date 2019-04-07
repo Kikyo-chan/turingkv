@@ -19,6 +19,11 @@ func main(){
     if err != nil {
         log.Fatalf("could not greet: %v", err)
     }
-    log.Printf("Greeting: %s", r.Isok)
+    log.Printf("Set Value Status: %s", r.Isok)
 
+    r_, err := c.GetV(context.Background(), &pb.VRequest{Key:"key"})
+    if err != nil {
+        log.Fatalf("could not greet: %v", err)
+    }
+    log.Printf("Get Value: %s", r_.Value)
 }

@@ -10,13 +10,13 @@ function randStr()
 }
 
 
-for i in {1..9}
+for i in {1..29}
 do
 str=$(randStr)
 echo "RUN SET TEST"
-ab -n 100 -c 10 -T application/json -p "data/test."$i".json"  "http://127.0.0.1:9988/keys/"$str"/"
+ab -n 2000 -c 500 -T application/json -p "data/test."$i".json"  "http://127.0.0.1:9988/keys/"$str"/"
 echo "RUN SET TEST OVER"
 echo "RUN GET TEST"
-ab -n 100 -c 10 "http://127.0.0.1:9988/keys/"$str"/"
+ab -n 2000 -c 500 "http://127.0.0.1:9988/keys/"$str"/"
 echo "RUN GET TEST OVER"
 done

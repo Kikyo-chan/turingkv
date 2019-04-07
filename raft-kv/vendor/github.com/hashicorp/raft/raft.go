@@ -7,7 +7,7 @@ import (
 	"io"
 	"io/ioutil"
 	"time"
-
+    log "github.com/Sirupsen/logrus"
 	"github.com/armon/go-metrics"
 )
 
@@ -142,6 +142,7 @@ func (r *Raft) run() {
 func (r *Raft) runFollower() {
 	didWarn := false
 	r.logger.Printf("[INFO] raft: %v entering Follower state (Leader: %q)", r, r.Leader())
+    log.Infof("raft: %v entering Follower state (Leader: %q)", r, r.Leader())
 	metrics.IncrCounter([]string{"raft", "state", "follower"}, 1)
 	heartbeatTimer := randomTimeout(r.conf.HeartbeatTimeout)
 	for {
@@ -189,16 +190,19 @@ func (r *Raft) runFollower() {
 			if r.configurations.latestIndex == 0 {
 				if !didWarn {
 					r.logger.Printf("[WARN] raft: no known peers, aborting election")
-					didWarn = true
+					log.Warnf("raft: no known peers, aborting election")
+                    didWarn = true
 				}
 			} else if r.configurations.latestIndex == r.configurations.committedIndex &&
 				!hasVote(r.configurations.latest, r.localID) {
 				if !didWarn {
 					r.logger.Printf("[WARN] raft: not part of stable configuration, aborting election")
-					didWarn = true
+					log.Warnf("raft: not part of stable configuration, aborting election")
+                    didWarn = true
 				}
 			} else {
 				r.logger.Printf(`[WARN] raft: Heartbeat timeout from %q reached, starting election`, lastLeader)
+                log.Warnf("[WARN] raft: Heartbeat timeout from %v reached, starting election", lastLeader)
 				metrics.IncrCounter([]string{"raft", "transition", "heartbeat_timeout"}, 1)
 				r.setState(Candidate)
 				return
@@ -236,6 +240,7 @@ func (r *Raft) liveBootstrap(configuration Configuration) error {
 func (r *Raft) runCandidate() {
 	r.logger.Printf("[INFO] raft: %v entering Candidate state in term %v",
 		r, r.getCurrentTerm()+1)
+    log.Infof("raft: %v entering Candidate state in term %v", r, r.getCurrentTerm()+1)
 	metrics.IncrCounter([]string{"raft", "state", "candidate"}, 1)
 
 	// Start vote for us, and set a timeout
@@ -246,6 +251,7 @@ func (r *Raft) runCandidate() {
 	grantedVotes := 0
 	votesNeeded := r.quorumSize()
 	r.logger.Printf("[DEBUG] raft: Votes needed: %d", votesNeeded)
+    log.Debugf("raft: Votes needed: %d", votesNeeded)
 
 	for r.getState() == Candidate {
 		select {
@@ -256,7 +262,8 @@ func (r *Raft) runCandidate() {
 			// Check if the term is greater than ours, bail
 			if vote.Term > r.getCurrentTerm() {
 				r.logger.Printf("[DEBUG] raft: Newer term discovered, fallback to follower")
-				r.setState(Follower)
+			    log.Debugf("raft: Newer term discovered, fallback to follower")
+            	r.setState(Follower)
 				r.setCurrentTerm(vote.Term)
 				return
 			}
@@ -266,11 +273,13 @@ func (r *Raft) runCandidate() {
 				grantedVotes++
 				r.logger.Printf("[DEBUG] raft: Vote granted from %s in term %v. Tally: %d",
 					vote.voterID, vote.Term, grantedVotes)
+                log.Debugf("raft: Vote granted from %s in term %v. Tally: %d",vote.voterID, vote.Term, grantedVotes)
 			}
 
 			// Check if we've become the leader
 			if grantedVotes >= votesNeeded {
 				r.logger.Printf("[INFO] raft: Election won. Tally: %d", grantedVotes)
+                log.Infof("raft: Election won. Tally: %d", grantedVotes)
 				r.setState(Leader)
 				r.setLeader(r.localAddr)
 				return
@@ -303,7 +312,8 @@ func (r *Raft) runCandidate() {
 			// Election failed! Restart the election. We simply return,
 			// which will kick us back into runCandidate
 			r.logger.Printf("[WARN] raft: Election timeout reached, restarting election")
-			return
+			log.Warnf("raft: Election timeout reached, restarting election")
+            return
 
 		case <-r.shutdownCh:
 			return
@@ -315,6 +325,7 @@ func (r *Raft) runCandidate() {
 // the leaderLoop for the hot loop.
 func (r *Raft) runLeader() {
 	r.logger.Printf("[INFO] raft: %v entering Leader state", r)
+    log.Infof("raft: %v entering Leader state", r)
 	metrics.IncrCounter([]string{"raft", "state", "leader"}, 1)
 
 	// Notify that we are the leader
